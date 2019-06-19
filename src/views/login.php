@@ -1,5 +1,14 @@
 <div class="col-md-6">
    <h3>Login</h3>
+
+   <?php if(isset($error)): ?>
+
+      <div class="alert alert-danger">
+         <?= $error ?>
+      </div>
+
+   <?php endif; ?>
+
    <form method="post">
       <div class="form-group">
          <label for="login">Identifiant</label>
@@ -7,7 +16,7 @@
       </div>
       <div class="form-group">
          <label for="password">Identifiant</label>
-         <input type="password" name="paswword" id="password" class="form-control">
+         <input type="password" name="password" id="password" class="form-control">
       </div>
       <div class="form-group">
          <button type="submit" name="submit" class="btn btn-block btn-primary">Connexion</button>
