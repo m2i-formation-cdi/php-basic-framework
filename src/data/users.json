@@ -1,0 +1,20 @@
+[
+  {
+    "userName": "Joe admin",
+    "login": "admin",
+    "role": "Admin",
+    "password": "$2y$10$rTy2WaJ1t6s2NN2Iqsj0r.cxETrAdTuGBgCqTS8AQ4LkKN4haN6Fa"
+  },
+  {
+    "userName": "Joe User",
+    "login": "joe",
+    "role": "User",
+    "password": "$2y$10$6/hPlF2415SHfShsVYeQKOZZaGlSmG1ApfaJMm6B7TOlwIpubs2q2"
+  },
+  {
+    "userName": "Super User",
+    "login": "god",
+    "role": "Super Admin",
+    "password": "$2y$10$8VccOay0WAJ0Sde2LWFgxe6JQWEQlpRirABhD5eLQ1cg7xvGcevS."
+  }
+]

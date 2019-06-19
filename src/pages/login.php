@@ -9,6 +9,8 @@ if($isPosted){
 
    if($user){
       $_SESSION["user"]= $user;
+
+      setFlash("Bonjour {$user['userName']}");
       //redirection vers home
       header("location:index.php?page=home");
       exit;
