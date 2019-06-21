@@ -46,3 +46,8 @@ function browseFolder($path){
 
    return $html;
 }
+
+function getPDO():PDO{
+   $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
+   return new PDO(DB_DSN,DB_USER,DB_PASS, $options);
+}
