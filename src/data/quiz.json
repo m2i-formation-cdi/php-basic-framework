@@ -1,0 +1,35 @@
+[
+   {
+      "question": "Que veut dire PHP ?",
+      "answers": [
+         "PHP Hyper Processor",
+         "Pauve Hercule Paralytique",
+         "Pas Heureux de Programmer"
+      ],
+      "solution": 0
+   },
+
+   {
+      "question": "Combien de bits dans un octet ?",
+      "answers": [
+         "2",
+         "4",
+         "8",
+         "8192",
+         "Quand on aime on ne compte pas"
+      ],
+      "solution": 2
+   },
+
+   {
+      "question": "Qui a inventé Linux",
+      "answers": [
+         "Bill Gates",
+         "Confucius",
+         "Dieu",
+         "Le Diable",
+         "Linus Torvald"
+      ],
+      "solution": 4
+   }
+]
