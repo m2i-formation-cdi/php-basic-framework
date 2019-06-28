@@ -12,7 +12,7 @@ if($isPosted){
 
       setFlash("Bonjour {$user['userName']}");
       //redirection vers home
-      header("location:index.php?page=home");
+      header("location:/home");
       exit;
    } else {
       $error = "Echec de l'authentification";

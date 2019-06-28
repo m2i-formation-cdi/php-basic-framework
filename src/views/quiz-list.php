@@ -11,9 +11,9 @@
          <td> <?=$quiz["id"] ?> </td>
          <td> <?=$quiz["name"] ?> </td>
          <td> 
-            <a href="index.php?page=quiz-crud&action=quiz-form&id=<?=$quiz["id"] ?>">Modifier</a>
+            <a href="/quiz-crud?action=quiz-form&id=<?=$quiz["id"] ?>">Modifier</a>
 
-            <a href="index.php?page=quiz-crud&action=quiz-delete&id=<?=$quiz["id"] ?>">Supprimer</a>
+            <a href="/quiz-crud&action=quiz-delete&id=<?=$quiz["id"] ?>">Supprimer</a>
       
          </td>
       </tr>

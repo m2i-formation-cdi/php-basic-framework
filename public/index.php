@@ -15,7 +15,7 @@ $user = getAuthenticatedUser();
 $publicRoutes = ["login", "home", "register"];
 
 if(!$user && ! in_array($page, $publicRoutes)){
-   header("location:index.php?page=login");
+   header("location:/login");
 }
 
 require getPage($page);

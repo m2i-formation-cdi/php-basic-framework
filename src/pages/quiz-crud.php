@@ -20,7 +20,7 @@ if(filter_has_var(INPUT_POST, "submit")){
          ];
          if(updateQuiz(getPDO(), $updateData)){
             setFlash("Mise à jour OK");
-            header("location: index.php?page=quiz-crud&action=quiz-list");
+            header("location: /quiz-crud?action=quiz-list");
             exit;
          } else {
             setFlash("Impossible de modifier le quiz");
@@ -34,7 +34,7 @@ if(filter_has_var(INPUT_POST, "submit")){
          $pdo = getPDO();
          if(insertQuiz($pdo,["name" => $name])){
             setFlash("Insertion ok");
-            header("location:index.php?page=quiz-crud&action=quiz-list");
+            header("location:/quiz-crud?action=quiz-list");
             exit;
          } else {
             setFlash("Impossible d'insérer le quiz");
@@ -70,7 +70,7 @@ if($id && $page=="quiz-form"){
 if($id && $page == "quiz-delete"){
    try {
       deleteOneQuiz(getPDO(), $id);
-      header("location:index.php?page=quiz-crud&action=quiz-list");
+      header("location:/quiz-crud?action=quiz-list");
       exit;
    } catch(PDOException $ex){
       setFlash("Erreur SQL". $ex->getMessage());

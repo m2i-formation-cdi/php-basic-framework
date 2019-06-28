@@ -18,10 +18,10 @@
       <div class="col-3">
          <?php if($user): ?>
             <?= $user["userName"] ?>
-            <a href="index.php?page=logout">Déconnexion</a>
+            <a href="/logout">Déconnexion</a>
          <?php else: ?>
-            <a href="index.php?page=login">Connexion</a>
-            <a href="index.php?page=register">Inscription</a>
+            <a href="/login">Connexion</a>
+            <a href="/register">Inscription</a>
          <?php endif ?>
       </div>
    </header>

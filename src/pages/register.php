@@ -14,7 +14,7 @@ if($isPosted){
       if(insertUser($userName, $login, $password, $role)){
          setFlash("Vous êtes bien inscrit nous allons vous piquer vos données perso");
          
-         header("location:index.php?page=home");
+         header("location:/home");
          exit;
       } else {
          $error = "Impossible de sauvegarder vos données";
